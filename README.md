@@ -1,8 +1,17 @@
-# Tema 1 IA - Introducere în Machine Learning
-
-_Istrate Alexandru-Daniel, grupa 334CA_
-
+# Student Performance Predictor
+# Introducere în Machine Learning
 ---
+
+## 0. Descrierea proiectului
+
+Acest proiect reprezintă un pipeline complet de Machine Learning dezvoltat pentru a prezice performanța academică a studenților și pentru a identifica din timp riscul de eșec sau abandon. Utilizând setul de date public **Open University Learning Analytics Dataset (OULAD)**, sistemul analizează comportamentul timpuriu al studenților — precum notele la primele evaluări, interacțiunile cu platforma educațională și background-ul academic, rezolvând două sarcini de predicție majore:
+
+1. **Sarcina de clasificare (Multi-class):** Prezicerea rezultatului final al studentului la încheierea cursului (`Distinction`, `Pass`, `Fail` sau `Withdrawn`).
+2. **Sarcina de regresie:** Estimarea scorului final (`final_coursework_score`) pe care studentul îl va obține.
+
+Proiectul pune un accent deosebit pe etapele de **Exploratory Data Analysis (EDA)** și **preprocesare a datelor**, abordând provocări specifice datelor educaționale din lumea reală. Arhitectura soluției include identificarea și eliminarea scurgerilor de informații (*data leakage*), tratarea valorilor extreme (*outliers*) prin metoda IQR, gestionarea dezechilibrului de clase și optimizarea algoritmilor pentru spații de trăsături rarefiate (*sparse data*). 
+
+Rezultatele demonstrează cum o inginerie a trăsăturilor (*feature engineering*) riguroasă, combinată cu algoritmi liniari bine regularizați, poate oferi predicții stabile și interpretabile, vitale pentru un eventual sistem de alertă timpurie în mediul universitar.
 
 ## 1. Explorarea Datelor (Exploratory Data Analysis)
 
